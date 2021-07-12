@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Mathias de Lima">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/styles/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap">
+    <link rel="icon" href="/assets/img/favicon.ico">
+
+    <title>Linx - Tarefas a Fazer</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Tarefas a fazer</h1>
+        <p>Adicione e complete tarefas para organizar melhor a sua semana. :)</p>
+    </header>
+
+    <div class="content">
+
+        <div class="search-bar">
+
+            <fieldset class="search" role="search">
+                <input type="text" placeholder="Busque tarefas" name="Buscar por tarefas" role="searchbox">
+                <button>Buscar</button>
+            </fieldset>
+
+            <div class="deadline">
+                <label for="select">Organizar por:</label>
+                <select name="prazo">
+                    <option>Prazo</option>
+                    <option value="prazo-1">1 Semana</option>
+                    <option value="prazo-2">2 Semanas</option>
+                    <option value="prazo-3">3 Semanas</option>
+                </select>
+            </div>
+
+        </div>
+
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge short">Prazo Curto !</span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
+                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge later">Atrasado :(</span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later">Atraso: 3 dias</span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> <img src="/assets/img/white-clock.svg" alt="">  Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/img/image-card.png" alt="">
+                    </div>
+                    <div class="card-info"> 
+                        <span class="badge"></span>
+                        <div class="card-header">
+                            <a class="card-name" src="#">Nome da Tarefa</a>
+                            <span class="card-description">
+                                Descrição da tarefa, o que deve ser feito.                            </span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="time">
+                                Prazo: <span class="days">00/00</span><span class="later"></span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="date">Data de inclusão: há 2 semanas</span>
+                                <div class="card-buttons">
+                                    <button class="button-conclude"> Concluir</button>
+                                    <button class="button-change"> Alterar Prazo</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+            <button class="see-more">VER MAIS +</button>
+            
+            <div class="news-latter">
+                <p>Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!</p>
+                <form action="">
+                    <div class="form-item">
+                        <label for="nome">nome</label>
+                        <input type="text" placeholder="Digite Seu Nome">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">email</label>
+                        <input type="email" placeholder="Digite Seu e-mail">
+                    </div>
+                    <div class="form-item">
+                        <button>Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="about-us">
+                <img src="./assets/img/logo-linx.png" alt="">
+                <span>
+                    <p>A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.</p>
+                    <p>Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.</p>
+                    <p>Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.</p>
+                </span>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <span>Testando suas habilidade em HTML e CSS</span>
+        <span>Linx Impulse <span id="year"></span></span>
+        <span>Teste ficcional</span>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+//Colors Variables
+$purpple-color: #422755;
+$purpple-color-2: #6E4B87;
+$yellow-color: #feaf3d;
+$orange-color: #f04837;
+
+//mixins
+@mixin font-style($font-weight, $font-size, $line-height, $color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin size-style($justify-content) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+    
+}
+
+@mixin button-style() {
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        filter: brightness(120%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content {
+    max-width: 1081px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+main {
+    margin-top: 70px;
+}

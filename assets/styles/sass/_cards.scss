@@ -1,0 +1,214 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .card {
+        width: 253px;
+        min-height: 360px;
+        background: #fff;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        border-radius: 14px;
+        padding: 16px;
+        margin-bottom: 35px;
+        position: relative;
+
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .card-header {
+                display: flex;
+                flex-direction: column;
+                a.card-name {
+                    @include font-style(700, 14px, 19.07px, #414141);
+                }
+                .card-description {
+                    @include font-style(400, 12px, 16.34px, #000);
+                    margin-top: 5px;
+                }
+            }
+
+            .card-footer {
+                margin-top: 8px;
+                .time {
+                    @include font-style(700, 12px, 16.34px, #000);
+                    .days {
+                        @include font-style(700, 18px, 24.51px, $orange-color);
+                    }
+                    .later {
+                        @include font-style(400, 10px, 13.62px, $orange-color);
+                        margin-left: 13px;
+                    }
+                }
+
+                .conclusion {
+                    .date {
+                        @include font-style(400, 10px, 13.32px, #414141);
+                    }
+                    .card-buttons {
+                        
+                        height: 0;
+                        overflow: hidden;
+                        
+                        transition: height 1s;
+                        
+
+
+                        button {
+                            @include font-style(700, 16px, 21.79px, #fff);
+                            @include button-style();
+                            width: 218px;
+                            height: 40px;
+                            
+                        }
+                        .button-conclude {
+                            background-color: $purpple-color;
+                            margin-bottom: 8px;
+                        }
+                        .button-change {
+                            background-color: $orange-color;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .badge {
+                display: none;
+                position: absolute;
+                top: 0;
+                z-index: 99;
+                width: 102px;
+                height: 29px;
+                text-align: center;
+                border-radius: 0px 5px 5px 0;
+                left: -15px;
+                top: 30px;
+                &.short {
+                    display: block;
+                    @include font-style(700, 12px, 26.34px, #fff);
+                    background: $purpple-color;
+                }
+                &.later {
+                    display: block;
+                    @include font-style(700, 12px, 26.34px, #fff);
+                    background: $orange-color;
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+
+            .card-info .card-footer .conclusion .card-buttons {
+                display: block;
+                height: 89px;
+            }
+        }
+    }
+}
+
+.see-more {
+    @include font-style(700, 16px, 21.79px, #fff);
+    @include button-style();
+    width: 197px;
+    height: 38px;
+    margin: 0 auto;
+    background: $purpple-color-2;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        .card {
+            width: 100%;
+            min-height: 210px;
+            display: flex;
+            flex-direction: row;
+
+            .card-image {
+                width: 147px;
+                min-width: 147px;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                img {
+                    flex-shrink: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+            }
+            .card-info {
+                display: block;
+                width: 100%;
+                padding: 0px 10px;
+                .card-header {
+                    .card-description {
+                        @include font-style(400, 11px, 14.98px, #000);
+                    }
+
+                    &:before {
+                        content: url("../../img/orage-clock.svg");
+                        position: absolute;
+                        right: 15px;
+                    }
+                }
+
+                .card-footer {
+                    .conclusion {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        margin-top: 7px;
+                        .card-buttons {
+                            display: block;
+                            height: 100%;    
+                            margin-top: 20px;
+                        
+
+                            .button-conclude {
+                                width: 100%;
+                                background: #fff;
+                                color: $purpple-color;
+                                border: 1px solid $purpple-color;
+                            }
+
+                            .button-change {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .badge {
+                    left: -5px;
+                }
+            }
+        }
+        &:hover {
+
+            .card-info .card-footer .conclusion .card-buttons {
+                display: block;
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards {
+        justify-content: space-around;
+
+        .card .card-info .badge {
+            left: -5px;
+        }
+    }
+}
