@@ -45,7 +45,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
     # Abrir o arquivo
     index.html
 
-    # Compilar sass
+    # Para compilar sass
     sass --watch assets/styles/sass/main.scss:assets/styles/css/style.css
 ```
 
